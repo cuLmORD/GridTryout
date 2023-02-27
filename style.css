@@ -12,7 +12,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1a1a1a;
+    background-color: #0c0c0c;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(11, 1fr);
@@ -46,7 +46,7 @@
     font-size: 1.5rem;
 }
 .gridItem {
-    background-color: #242424;
+    background-color: #1a1a1a;
 }
 .navbar ul {
     display: flex;
@@ -58,7 +58,6 @@
     font-weight: 500;
 }
 .navbarHover:hover {
-    /* background-color: #333333; */
     color: #7b639d;
     cursor: pointer;
 }
@@ -87,7 +86,7 @@
     border-radius: 15px 0 0 15px;
     background-color: #141414;
     text-align: left;
-    border-left: #7b639d solid 2px;
+    border-left: #66498f solid 2px;
     border-right: none;
 }
 .navbarSearchButton {
@@ -97,7 +96,7 @@
     color: white;
     background-color: #1a1a1a;
     border-radius: 0 15px 15px 0;
-    border-right: #7b639d solid 2px;
+    border-right: #66498f solid 2px;
     border-left: none;
 }
 .navbarSearchButton:hover {
@@ -108,4 +107,45 @@
     font-size: 30px;
     border-top: none;
     border-bottom: none;
+}
+.gridContainerContentCards {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.gridItemContentCards {
+    background-color: #101010;
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    padding: 5px;
+    gap: 5px;
+    box-shadow: 4px 4px 10px 1px #000000;
+}
+.cardItems {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cardItemsOne {
+    border-right: dashed #242424;
+    display: flex;
+    flex-direction: column;
+}
+.cardLogo {
+    font-size: 5rem;
+}
+.cardItemsTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 1rem;
+}
+.cardLink {
+    color: #66498f;
+    text-decoration: none;
 }
